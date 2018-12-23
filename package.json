@@ -1,0 +1,29 @@
+{
+  "name": "movies-api",
+  "version": "1.0.0",
+  "description": "Trabalho de APIs",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hugoiuri/movies-api.git"
+  },
+  "author": "Hugo Iuri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hugoiuri/movies-api/issues"
+  },
+  "homepage": "https://github.com/hugoiuri/movies-api#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "nconf": "^0.10.0"
+  }
+}
