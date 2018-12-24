@@ -53,6 +53,12 @@ Para a criação deste projeto foram utilizdas as seguintes tecnologias e framew
 - [Docker] - Plataforma de deploy
 - [MySql] - Banco de dados Relacional
 
+## Licença
+[MIT](LICENSE)
+
+## Autor
+[Hugo Iuri](https://github.com/hugoiuri)
+
 
 [Node.js]: <https://nodejs.org>
 [Express]: <http://expressjs.com>
