@@ -23,7 +23,7 @@ Execute o comando:
 docker run --name mysql5.7 -e MYSQL_ROOT_PASSWORD=mysql -d  -p 3306:3306 mysql:5.7
 ```
 
-Execute o script db.sql
+Execute o script [db.sql](db.sql)
 
 ### Preparando a aplicação
 
