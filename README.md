@@ -1,5 +1,7 @@
 # Movies API
-Trabalho da disciplina "Arquitetura e Desenvolvimento de APIs para Back-end" - Pós em Desenvolvimento de Aplicações para Dispositivos Móveis
+Trabalho da disciplina "Arquitetura e Desenvolvimento de APIs para Back-end"
+Pós Graduação em Desenvolvimento de Aplicações para Dispositivos Móveis
+PUC Minas - Contagem
 
 ## API
 Para os testes e documentação dos metodos desta API foi utilizado o [Postman] e o arquivo para importação da coleção de testes pode ser encontrado [aqui](movies-api.postman_collection.json)
