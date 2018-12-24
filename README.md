@@ -1,6 +1,8 @@
 # Movies API
 Trabalho da disciplina "Arquitetura e Desenvolvimento de APIs para Back-end"
+
 Pós Graduação em Desenvolvimento de Aplicações para Dispositivos Móveis
+
 PUC Minas - Contagem
 
 ## API
