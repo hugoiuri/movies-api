@@ -1,0 +1,712 @@
+{
+	"info": {
+		"_postman_id": "971dc718-9ef9-6e75-8cf7-9858273ca447",
+		"name": "movies-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://graph.facebook.com/me?access_token=EAAE6cQZBFzYgBACK3B8Vc8bMEVfSFTBVlbZACFZChIUZARldYPpOl64PZA7rul6iCPLVg9KJlufgM16QbBG7atQmZBRGKFZCBGODQiO4LK4j2t2N0B3xYi8uPloE6hHLGsS4kS5EuGjMcBrPcsZAYVwEBiKwn6NWHlkZBRiLIi3d1sZBEulZCWv66uoLBs8h54zP3WrRJAbTp41Fk2G",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://graph.facebook.com/me?access_token=EAAE6cQZBFzYgBAOWoR5pq2LRvPz1vmqZB3ZCadWoBZAfzpBQtpfQyR4ZBB0eZA27c0262ZCyQvs1RJj31fIzLL4hYzUiBDNmWWCyA4W8RJJNkVYGlDNKP4fEMbgffi6B4iQTHIUUpNliZBNQFeLw6hDfJuDQ9IPYKcbxbQWgOycid3Of46WOMTmWW2pgdEgFxSRSiJPZC2OtOHPMGE6xYLKnZCa3kZAAGFjZBV9XYdfkZBxQZBt8Am53ZAiGPT9&fields=name,email,id,picture",
+					"protocol": "https",
+					"host": [
+						"graph",
+						"facebook",
+						"com"
+					],
+					"path": [
+						"me"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "EAAE6cQZBFzYgBAOWoR5pq2LRvPz1vmqZB3ZCadWoBZAfzpBQtpfQyR4ZBB0eZA27c0262ZCyQvs1RJj31fIzLL4hYzUiBDNmWWCyA4W8RJJNkVYGlDNKP4fEMbgffi6B4iQTHIUUpNliZBNQFeLw6hDfJuDQ9IPYKcbxbQWgOycid3Of46WOMTmWW2pgdEgFxSRSiJPZC2OtOHPMGE6xYLKnZCa3kZAAGFjZBV9XYdfkZBxQZBt8Am53ZAiGPT9"
+						},
+						{
+							"key": "fields",
+							"value": "name,email,id,picture"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actors GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/actors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"actors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actors GET by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/actors/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"actors",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actors POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Hugo Iuri\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/actors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"actors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actors PUT",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Hugo Iuri Cordeiro\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/actors/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"actors",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actors DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/actors/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"actors",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Directors GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/directors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"directors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Directors GET by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/directors/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"directors",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Directors POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Hugo Iuri\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/directors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"directors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Directors PUT",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Hugo Iuri Cordeiro\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/directors/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"directors",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Directors DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/directors/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"directors",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movies GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movies GET by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/movies/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"movies",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movies POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"teste\",\n    \"releasedAt\": \"2018-12-23\",\n    \"length\": 136\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movies PUT",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"teste 2\",\n    \"releasedAt\": \"2018-12-23\",\n    \"length\": 136\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/movies/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"movies",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Movies DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/movies/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"movies",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Auth Signin POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fbToken\": \"EAAE6cQZBFzYgBAOWoR5pq2LRvPz1vmqZB3ZCadWoBZAfzpBQtpfQyR4ZBB0eZA27c0262ZCyQvs1RJj31fIzLL4hYzUiBDNmWWCyA4W8RJJNkVYGlDNKP4fEMbgffi6B4iQTHIUUpNliZBNQFeLw6hDfJuDQ9IPYKcbxbQWgOycid3Of46WOMTmWW2pgdEgFxSRSiJPZC2OtOHPMGE6xYLKnZCa3kZAAGFjZBV9XYdfkZBxQZBt8Am53ZAiGPT9\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Statistics GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/1/statistic",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"1",
+						"statistic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User List GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "EAAE6cQZBFzYgBAOWoR5pq2LRvPz1vmqZB3ZCadWoBZAfzpBQtpfQyR4ZBB0eZA27c0262ZCyQvs1RJj31fIzLL4hYzUiBDNmWWCyA4W8RJJNkVYGlDNKP4fEMbgffi6B4iQTHIUUpNliZBNQFeLw6hDfJuDQ9IPYKcbxbQWgOycid3Of46WOMTmWW2pgdEgFxSRSiJPZC2OtOHPMGE6xYLKnZCa3kZAAGFjZBV9XYdfkZBxQZBt8Am53ZAiGPT9",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/1/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"1",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User List POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "EAAE6cQZBFzYgBAOWoR5pq2LRvPz1vmqZB3ZCadWoBZAfzpBQtpfQyR4ZBB0eZA27c0262ZCyQvs1RJj31fIzLL4hYzUiBDNmWWCyA4W8RJJNkVYGlDNKP4fEMbgffi6B4iQTHIUUpNliZBNQFeLw6hDfJuDQ9IPYKcbxbQWgOycid3Of46WOMTmWW2pgdEgFxSRSiJPZC2OtOHPMGE6xYLKnZCa3kZAAGFjZBV9XYdfkZBxQZBt8Am53ZAiGPT9",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"movieId\": 3,\n    \"list\": \"favorite\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/1/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"1",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User List DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "EAAE6cQZBFzYgBAOWoR5pq2LRvPz1vmqZB3ZCadWoBZAfzpBQtpfQyR4ZBB0eZA27c0262ZCyQvs1RJj31fIzLL4hYzUiBDNmWWCyA4W8RJJNkVYGlDNKP4fEMbgffi6B4iQTHIUUpNliZBNQFeLw6hDfJuDQ9IPYKcbxbQWgOycid3Of46WOMTmWW2pgdEgFxSRSiJPZC2OtOHPMGE6xYLKnZCa3kZAAGFjZBV9XYdfkZBxQZBt8Am53ZAiGPT9",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/1/list/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"1",
+						"list",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
