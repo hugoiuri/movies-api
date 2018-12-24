@@ -1,6 +1,6 @@
 {
     "PORT": "3000",
-    "LOG_LEVEL": "debug",
+    "LOG_LEVEL": "info",
     "DEBUG_MODE": true,
     "DATABASE" : "{\"host\":\"localhost\",\"user\":\"root\",\"password\":\"mysql\",\"database\":\"moviedb\",\"port\":\"3306\"}"
 }
